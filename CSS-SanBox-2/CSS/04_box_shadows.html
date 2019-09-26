@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box & Shadows</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            padding: 1rem;
+            background: lightcoral;
+            color: white;
+            margin: 1rem;
+        }
+        .one {
+            /* Offset-x  | Offset-y | color */
+            box-shadow: 10px 10px turquoise;
+        }
+        .two {
+            /* Offset-x  | Offset-y | blur-radius | color */
+            box-shadow: 10px 10px 15px turquoise;
+        }
+        .three {
+            /* Offset-x  | Offset-y | blur-radius | spread-radius | color */
+            box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.4);
+        }
+        .four {
+            /* inset comes from inside the box*/
+            box-shadow: inset 10px 10px turquoise;
+        }
+        .five {
+            /* Multiple shadows */
+            box-shadow: 5px 5px  turquoise, -5px -5px  greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box one">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box one">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box one">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box two">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box two">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box two">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box three">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box three">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box three">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box four">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box four">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box four">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+</body>
+    <div class="box five">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box five">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+    <div class="box five">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi error eveniet praesentium quis laboriosam tempore iste fugit doloribus commodi voluptates!</p>
+    </div>
+</body>
+</html>

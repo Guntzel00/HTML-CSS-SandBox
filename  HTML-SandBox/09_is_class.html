@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Div, span, id and class</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        #contact {
+            border: 2px solid black;
+        }
+        .enhance {
+            color: green ;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main-header">
+    <h1>My website</h1>
+    <p>This is a website about me</p>
+    </div>
+    <div id="main-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Span is a inline stile and Div is a block style -->
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem <span class="enhance"> dolor sit amet consectetur adipisicing elit.</span> Dolor officiis nesciunt eius rerum dignissimos impedit, eum nemo. Accusantium enim <div class="enhance">error rem magnam eveniet ullam quaerat eos pari</div>atur optio, sit eligendi?</p>
+    </div>
+
+    <div id="contact" class="card">
+        <h3>Contact me</h3>
+        <li>Email: gustavo@outlook.com</li>
+        <li>Phone: 777-777-7777</li>
+        <li>Address: Main street, Vancouver</li>
+    </div>
+</body>
+</html>

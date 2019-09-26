@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Targeted Selectors</title>
+    <style>
+        /* Directly Child */
+        div p {
+            background: #ddd;
+        }
+
+        /* Directly After */
+        div + p {
+            background: black;
+            color: #fff;
+        }
+
+        /* By attribute */
+        a[target] {
+            background: red;
+            color: #fff;
+        } 
+
+        /* By Attribute, considering the value of the attribute */
+
+        a[target='_self'] {
+            background: purple;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li>Item 1</li>
+            <li><p> 2</p></li>
+            <li>Item 3</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+
+    <a href="#">Page 1</a>
+    <a href="#" target="_self">Page 2</a>
+    <a href="http://google.com" target="blank">Page 3</a>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Querie</title>
+    <style>
+
+        /* SmartPhone */
+        @media(max-width: 500px) {
+            body {
+                background: orange
+            }
+        }
+
+        /* Tablet */
+        @media(min-width: 501px) and (max-width: 768px){
+            body {
+                background: green;
+            }
+        }
+        
+        /* Normal */
+        @media(min-width: 769px) and (max-width: 1200px) {
+
+            body {
+                background: red;
+            }
+
+        }
+        
+        /* WideScreen */
+        @media(min-width: 1201px) {
+        body{
+            background: black;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="smartphone"></div>
+    <div id="tablet"></div>
+    <div id="normal"></div>
+    <div id="widescreen"></div>
+</body>
+</html>

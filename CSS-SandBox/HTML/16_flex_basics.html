@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Basics</title>
+    <style>
+        /* When the parent is in Display Flex all the childs are going to be flex */
+        #container {
+            display: flex;
+            /* changes the direction of the itens, note that flex has a default direction of row */
+            /* flex-direction: column; */
+        }
+        #container .item {
+            /* I use the flex propety to define the porportion of the itens,, it is something really similiar with the  grid system when 
+            we use "1fr" to determine the proportion of the items  */
+            flex: 1;
+        }
+        #container .item:first-child {
+            flex: 2;
+        }
+        #container2 {
+            display: flex;
+            /* After 12 itens in the container the screen will have a scroll bar or you could use the propety wrap to jump to another line */
+            flex-wrap: wrap;
+        }
+        .item {
+            background: #f4f4f4;
+            border: #ccc 1px solid;
+            padding: 1rem;
+            text-align: center;
+            margin: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item"><h3> Item 1</h3></div>
+        <div class="item"><h3> Item 2</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+    </div>
+    <div id="container2">
+        <div class="item"><h3> Item 1</h3></div>
+        <div class="item"><h3> Item 2</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+        <div class="item"><h3> Item 3</h3></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,255 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4rem;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 0.75rem 0;
+}
+
+
+
+
+/* Utilities */
+.text-primary {
+    color: #93cb52;
+}
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    font-weight: 600;
+}
+.l2-heading {
+    font-size: 2rem;
+    line-height: 1.1rem;
+    margin-bottom: 0.75rem 0;
+    text-align: center;
+    font-weight: 600;
+}
+.btn-dark {
+    border: none;
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.3rem 2rem;
+    width: 100%;
+    border-radius: 5px;
+}
+.btn-dark:hover{
+    background: rgb(46, 43, 43);
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    width: 100vw;
+    opacity: 0.9;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* It defines who should appear over who, if I define another element with a z-index of "2" it will override my navbar */
+    z-index: 1;
+    padding: 1rem;
+    font-weight: 600;
+}
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-style: bold;
+    padding-bottom: 1.2rem;
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+.navbar ul li a{
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+}
+.navbar ul li a:hover {
+    background: #93cb52;
+    border-radius: 5px;
+}
+
+
+
+/* showcase */
+#showcase {
+    width: 100vw;
+    height: 100vh;
+    background: #333 url(../image_resources/showcase.jpg) center center no-repeat/cover;
+}
+#showcase-content {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    text-align: center;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+#showcase-content p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+}
+#showcase-content a{
+    color: #fff;
+    background: #93cb52;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+}
+#showcase-content a:hover {
+    background: #82b845;
+}
+
+
+/* What We Do */
+
+#what {
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+.box {
+    display: flex;
+    margin: 1.2rem 0;
+    align-items: center;
+}
+.box  h3{
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.box i {
+    color: #333;
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 0 0.7rem;
+}
+
+
+/* Who */
+
+#who {
+    background: #333;
+    color: #fff;
+    display: flex;
+    width: 100vw;
+}
+#who #who-image {
+    display: none;
+}
+#who #who-text {
+    padding: 2rem;
+}
+#who #who-text p {
+    margin: 1.5rem 0;
+}
+
+#who #who-text h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Clients */
+.clients {
+    display: flex;
+    flex-direction: column;
+
+}
+.clients h2 {
+    padding: 1.5rem 0;
+}
+.clients-logo {
+    display: flex;
+    width: 100vw;
+    background: #fff;
+    margin-bottom: 1rem;
+}
+.clients-logo .removable {
+    display: none;
+}
+.clients-logo img {
+    width: 100%;
+}
+
+
+/* Contact-form */
+
+#contact {
+    display: flex;
+    color: #fff;
+    width: 100vw;
+    height: 75vh;
+    background: #93cb52;
+    
+}
+#contact h2 {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+.contact-form {
+    padding: 2rem;
+    width: 100%;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.form-group input{
+    padding: 0.3rem 0;
+}
+
+.form-group input, .form-group textarea{
+    border-radius: 5px;
+    border: none;
+}
+.form-group input:focus, .form-group textarea:focus{
+    border-radius: 5px;
+
+    }  
+    
+/* Map */
+
+.map {
+    width: 60%;
+    display: none;
+}
+    
+
+/* Footer */
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    width: 100vw;
+}
+
+

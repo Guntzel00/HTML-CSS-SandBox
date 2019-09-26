@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selector</title>
+    <style>
+        /* Element Selectors */
+        body {
+            background-color: #333;
+        }
+        /* We use # for ID's and . for clases */
+        .primary-heading{
+            color: green;
+        }
+        
+        /* Here we have multiple selectors, they are divided by a comma */
+        #welcome, #about {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: justify;
+            background-color: #f4f4f4;
+            margin-bottom: 5px;
+        }
+        
+        /* Nested selector */
+        #welcome p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat itaque et, hic, enim ullam laborum eum illum aspernatur alias velit error, aperiam sunt veritatis eos?</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quia eum tenetur minima natus rerum ut pariatur atque nam ad. Dolorum commodi dignissimos amet natus!
+        </p>
+    </div>
+</body>
+</html>

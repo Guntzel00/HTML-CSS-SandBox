@@ -1,0 +1,68 @@
+/* 
+=======================
+       Home Page
+=======================
+*/
+
+#navbar {
+    text-align: center;
+}
+
+#navbar h1 {
+    float: none;
+}
+#navbar ul li {
+    float: none;
+    border-bottom: #444 2px dotted;
+}
+#navbar ul li a {
+    padding: 5px;
+}
+
+/* Footer */
+
+.footer {
+    width: 100vw;
+}
+
+/* Home Page - History */
+#history-showcase {
+    width: 100vw;
+}
+
+#container-1 {
+    display: none;
+}
+
+#container-2 {
+    width: 100vw;
+    height: 100%;
+}
+.box {
+    width: 100vw;
+    float: none;
+}
+
+/* 
+======================
+      About Page 
+======================
+*/
+
+#about-container-1, #about-container-2 {
+
+    float: none;
+    width: 100%;
+    padding: 20px 0px;
+    
+}
+#about-container-1 {
+    text-align: center;
+}
+
+/* 
+======================
+      Contact Page 
+======================
+*/
+

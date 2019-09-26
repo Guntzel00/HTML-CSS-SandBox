@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Em & Rem</title>
+    <style>
+        /* When you use "em" you are basing the font-size in the parent font-size as in the box-1 */
+
+        #box-1 {
+            font-size: 20px;
+        }
+
+        #box-1  p{
+            font-size: 1.2em;
+        }
+
+        /* When you use rem you are basing the font-size in the root font-size as in the box-2 */
+
+        /* Tag <html> is the root */
+        html {
+            font-size: 10px;
+        }
+        #box-2  {
+            font-size: 1.6rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-1">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae perspiciatis atque sapiente sit ex officiis quasi minima saepe fugit laboriosam? Esse, similique odio? Quis harum quo tempora consectetur. Itaque, alias?</p>
+    </div>
+    <h3>Box Two</h3>
+    <div id="box-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum similique, temporibus quod, numquam vitae iure aut quas  iusto blanditiis praesentium maxime esse omnis, repudiandae dolorum! Pariatur sunt quasi earum inventore.
+    </div>
+    <h3>Box Three</h3>
+    <div id="box-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus in consectetur laboriosam necessitatibus impedit          sequi consequuntur cumque velit, obcaecati animi et dolor, corrupti saepe! Excepturi totam porro error eius praesentium!
+    </div>
+</body>
+</html>
