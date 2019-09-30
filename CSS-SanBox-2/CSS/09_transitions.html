@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transitions</title>
+    <style>
+    * {
+        margin: 0;
+    }
+    body {
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .box {
+        background: white;
+        width: 100px;
+        height: 100px;
+        transition-property: background, border-radius;
+        /* Duration of the effect */
+        transition-duration: 2s; 
+        /* Smooth transition */
+        transition-timing-function: ease-in-out;
+        /* We can have delays */
+        /* transition-delay: 1s; */
+    }
+    .box { 
+        /* A shortcut for this */
+        transition: all 2s ease-in-out;
+    }
+    .box:hover {
+        background: rgb(139, 4, 4);
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
