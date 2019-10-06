@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transform 3D</title>
+    <style>
+        body {
+        background: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .wrapper {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+    }
+    .wrapper img {
+        width: 150px;
+        height: 150px;
+    } 
+    .wrapper img:nth-child(2) {
+        filter: grayscale(0.9);
+    }
+
+    /* Magic */
+    .wrapper div {
+        transform: translate3d(0px, 0px, 0px);
+        transition: transform ease-in-out 2s;
+    }
+    .wrapper div:hover {
+        transform: translate3d(0, -150px, 0px);
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+        <img src="/img/seawall.jpg" alt="seawall">
+        <img src="/img/seawall.jpg" alt="seawall">
+        </div>
+    </div>
+</body>
+</html>
