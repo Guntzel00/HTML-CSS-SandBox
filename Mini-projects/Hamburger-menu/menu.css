@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    visibility: hidden;
 }
 .menu-wrap .menu > div {
     background: rgb(87, 99, 99, 0.75);
@@ -54,6 +55,9 @@
 
 .menu-wrap .toggler:checked ~ .menu > div{
     transform: scale(1);
+}
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
 }
 .menu-wrap .toggler:checked ~ .menu > div >div{
     opacity: 1;
