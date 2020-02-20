@@ -1,0 +1,24 @@
+/* ============== */
+/*     General    */
+/* ============== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Staatliches', cursive;
+}
+
+
+/* ============== */
+/*     Header     */
+/* ============== */
+
+.header {
+    width: 100vw;
+    display: grid;
+    grid-template: 'logo social-media navbar';
+}
