@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid columns</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid {
+            display: grid;
+            padding: 1rem;
+            /* You can set the values of each div inside the grid parent using the conventional measures
+            (px, rem, %), fr or auto complete grid-template-columns: 200px auto 200px; */
+            
+            /* if you are going to repeat the values multiple times you can use the propertie repeat, that 
+            receives a number and a paremter grid-template-columns: repeat(3, auto); */
+            
+            grid-template-columns: 1fr 2fr 1fr;
+
+            /* Gaps are useful to give margin between the divs inside the grid, can also be used with separate
+             values using column-gaps, row-gaps  */
+             /* Grid-gap is obsolete */
+            gap: 1rem;
+
+        }
+        .item {
+            padding: 3rem;
+            border: 1px solid #333;
+            background: gray;
+            font-weight: bold;
+            text-align: center;
+        }
+        .main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>  
+        <div class="item">item 4</div>  
+        <div class="item">item 5</div>  
+        <div class="item">item 6</div>  
+    </div>
+    <div class="main">
+        <div class="content">
+            <h1>Welcome to my web site</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure rem voluptatum, quibusdam distinctio possimus quaerat debitis, enim laborum tempora quae unde temporibus harum officiis, cumque eveniet ab eius aliquid nobis.</p>
+        </div>
+        <div class="sidebar">
+            <h3>Hello, user</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, deleniti consectetur ut quaerat est numquam.</p>
+        </div>
+    </div>
+</body>
+</html>
