@@ -89,7 +89,7 @@ p {
 #showcase {
     width: 100vw;
     height: 100vh;
-    background: #333 url(../image_resources/showcase.jpg) center center no-repeat/cover;
+    background: #333 url(../image_resources/showcase.jpg) center center/cover no-repeat;
 }
 #showcase-content {
     display: flex;

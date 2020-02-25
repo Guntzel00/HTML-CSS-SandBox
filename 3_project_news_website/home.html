@@ -4,29 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/image_resources/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./image_resources/icon.png" type="image/x-icon">
     <title>News Grid - Home</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__logo-div">
-            <img class="header__logo" src="/image_resources/logo.png" alt="Our company logo">
+        <div class="header__logo-div flex-align">
+            <a href="home.html"><img class="header__logo" src="image_resources/logo.png" alt="Our company logo"></a>
         </div>
-        <div class="header__social-media">
-            <img src="/image_resources/icons8-facebook-old-100.png" alt="Facebook Icon">
-            <img src="/image_resources/icons8-twitter-100.png" alt="Twitter Icon">
-            <img src="/image_resources/icons8-instagram-old-100.png" alt="Instagram Icon">
-            <img src="/image_resources/icons8-start-100.png" alt="Youtube Icon">
+        <div class="header__social-media flex-align">
+            <a href="https://www.facebook.com" target="_blank" class="header__social-icon"><img src="image_resources/icons8-facebook-old-100.png" alt="Facebook Icon"></a>
+            <a href="https://www.twitter.com" target="_blank" class="header__social-icon"><img src="image_resources/icons8-twitter-100.png" alt="Twitter Icon"></a>
+            <a href="https://www.instagram.com" target="_blank" class="header__social-icon"><img src="image_resources/icons8-instagram-old-100.png" alt="Instagram Icon"></a>
+            <a href="https://www.youtube.com" target="_blank" class="header__social-icon"><img src="image_resources/icons8-start-100.png" alt="Youtube Icon"></a>
         </div>
-        <div class="header__navbar">
-            <ul>
-                <li><a href="home.html">Home</a></li>
+        <div class="header__navbar-div flex-align">
+            <ul class="header__navbar">
+                <li><a class="current" href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </div>
     </header>
+    <section class="showcase">
+        <div class="container">
+            <div class="showcase-content">            
+                <div class="category category-sports">sports</div>
+                <h1>SOME SPORTS ARTICLE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolorum hic impedit ducimus quo? Minima, illo expedita. Reprehenderit, possimus quod quos cupiditate minima minus in mollitia odit harum ratione itaque.</p>
+                <a class="btn btn--primary"href="article.html">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="articles-div">
+        <div class="container">
+            <h2>EDITOR PICKS</h2>
+            <div class="articles">
+                <div class="card card-1">
+                    <div class="card__img">
+                        <a href="article.html"><img src="image_resources/articles/ent1.jpg" alt="Man playing with VR"></a>
+                    </div>
+                    <div class="card__text">
+                        <div class="category category-ent">ENTERTAINMENT</div>
+                        <H3><a href="article.html">Lorem ipsum dolor sit amet</a></H3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</P>
+                    </div>
+                </div>
+                <div class="card card-2">
+                    <div class="card__text">
+                        <div class="category category-sports">SPORTS</div>
+                        <H3><a href="article.html">Lorem ipsum dolor sit amet</a></H3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</P>
+                    </div>
+                </div>
+                <div class="card card-3">
+                    <div class="card__img">
+                        <a href="article.html"><img src="image_resources/articles/tech1.jpg" alt="A computer server"></a>
+                    </div>
+                    <div class="card__text">
+                        <div class="category category-tech">TECHNOLOGY</div>
+                        <H3><a href="article.html">Lorem ipsum dolor sit amet</a></H3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</P>
+                    </div>
+                </div>
+                <div class="card card-4">
+                    <div class="card__text">
+                        <div class="category category-sports">SPORTS</div>
+                        <H3><a href="article.html">Lorem ipsum dolor sit amet</a></H3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</P>
+                    </div>
+                    <div class="card__img">
+                        <a href="article.html"><img src="image_resources/articles/sports1.jpg" alt="Olympic bike race"></a>
+                    </div>
+                </div>
+                <div class="card card-5">
+                    <div class="card__img">
+                        <a href="article.html"><img src="image_resources/articles/tech2.jpg" alt="A laptop over the table"></a>
+                    </div>
+                    <div class="card__text">
+                        <div class="category category-tech">TECHNOLOGY</div>
+                        <H3><a href="article.html">Lorem ipsum dolor sit amet</a></H3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</P>
+                    </div>
+                </div>
+                <div class="card card-6">
+                    <div class="card__text">
+                        <div class="category category-sports">SPORTS</div>
+                        <H3><a href="article.html">Lorem ipsum dolor sit amet</a></H3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</P>
+                    </div>
+                </div>
+                <div class="card card-7">
+                    <div class="card__img">
+                        <img src="image_resources/articles/ent2.jpg" alt="The back view of a professional camera filming a scene">
+                    </div>
+                    <div class="card__text">
+                        <div class="category category-ent">ENTERTAINMENT</div>
+                        <H3><a href="article.html">Lorem ipsum dolor sit amet</a></H3>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</P>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>

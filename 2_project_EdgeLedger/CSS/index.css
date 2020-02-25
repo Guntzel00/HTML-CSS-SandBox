@@ -28,7 +28,7 @@
 
 #who #who-image {
     display: flex;
-    background: url(../image_resources/people.jpg) center center no-repeat/ cover;
+    background: url('../image_resources/people.jpg')  center center/cover no-repeat;
     width: 50%;
 }
 #who #who-text {
