@@ -92,6 +92,22 @@ a {
     background: #444;
 }
 
+.primary--bk {
+    background: var(--primary-color);
+}
+.secondary--bk {
+    background: var(--secondary-color);
+}
+.club__ {
+    padding: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+.club__ .btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
 /* ============== */
 /*     Header     */
 /* ============== */
@@ -324,17 +340,63 @@ a {
 .about__text p {
     margin-top: 1rem;
 }
-.about__sidebar {
-    background: var(--primary-color);
-    padding: 1.5rem;
-    color: #fff;
+
+
+/* ============================================================================================================================= */
+/*                                                           Article - PAGE                                                        */
+/* ============================================================================================================================= */
+
+.article-div {
+    background: #eee;
+    padding: 2rem;
+}
+.article {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     text-align: center;
 }
-.about__sidebar .btn {
+.article__text {
+    background: #fff;
+    padding: 1rem;
+}
+.article__text img {
     width: 100%;
+    margin-bottom: 2rem;
+}
+
+.article__author {
+    padding: 0.5rem;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.article__author > div {
     margin-top: 1rem;
 }
 
+.article p {
+    margin: 0.5rem 0rem
+}
+
+.sidebar__nav {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.sidebar__nav a:hover {
+    color: var(--primary-color);
+}
+.sidebar__nav li {
+    padding: 1rem;
+    border-bottom: #555 dotted  1px;
+}
+
+.sidebar__club {
+    padding: 1rem;
+}
 
 /* ============================================================================================================================= */
 /*                                                             Query - Tablet                                                    */
@@ -405,6 +467,34 @@ a {
 .about {
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr;
+}
+
+
+
+/* ============================================================================================================================= */
+/*                                                           Article - PAGE                                                        */
+/* ============================================================================================================================= */
+.article {
+    display: grid;
+    grid-template-columns: 1fr 0.35fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    text-align: start;
+}
+
+.article__text {
+    grid-column: 1/2;
+}
+.article__author {
+    flex-direction: row;
+}
+
+.article__sidebar{
+    grid-column: 2/3;
+}
+
+.sidebar__nav {
+    margin-top: 0;
 }
 
 }
