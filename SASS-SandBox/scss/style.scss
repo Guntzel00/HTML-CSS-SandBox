@@ -1,0 +1,92 @@
+// Variables
+
+$primary-color: steelblue;
+$secondary-color: skyblue;
+$dark-color: #333;
+$light-color: #f4f4f4;
+$font-stack: Arial, sans-serif;
+
+// Functions
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Mixin's
+
+@mixin transform($property) {
+  transform: $dark-color;
+  -webkit-transform: $property;
+  -ms-transform: $property;
+}
+@mixin transition($ease, $duration) {
+  transition: $ease $duration;
+}
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: $light-color;
+  color: $dark-color;
+  font-family: $font-stack;
+  line-height: 1.5rem;
+}
+header {
+  background: $dark-color;
+  color: set-text-color($dark-color);
+  padding: 1rem;
+  h1 {
+    text-align: center;
+  }
+}
+
+.section {
+  padding: 3rem;
+  color: #fff;
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    margin: 1rem 0;
+  }
+  &-a {
+    background: $primary-color;
+  }
+  &-b {
+    background: $secondary-color;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  @include transition(ease-in-out, 0.5s) &: hover {
+    @include transform(scale(1.1));
+  }
+
+  &-light {
+    background: $light-color;
+    color: $dark-color;
+
+    &:hover {
+      background: darken($color: $light-color, $amount: 10%);
+    }
+  }
+  &-dark {
+    background: $dark-color;
+    color: $light-color;
+    &:hover {
+      background: lighten($color: $dark-color, $amount: 10%);
+    }
+  }
+}
